@@ -1,0 +1,28 @@
+{
+  "name": "webpmux-info",
+  "version": "1.0.0",
+  "description": "Get webp info using webpmux",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakebonk/webpmux-info.git"
+  },
+  "keywords": [
+    "webp",
+    "webpmux",
+    "animated webp",
+    "webp-info"
+  ],
+  "author": "Jacob Bonk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakebonk/webpmux-info/issues"
+  },
+  "homepage": "https://github.com/jakebonk/webpmux-info#readme"
+}
