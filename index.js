@@ -1,9 +1,11 @@
-var exec = require('child_process').exec;//get child_process module
+var exec = require('child_process').execFile;//get child_process module
 const webpmux = require('./webpmux');
 
 module.exports = (file_name) => {
 	return new Promise(function(resolve,reject){
-		exec(webpmux()+' -info '+file_name,(err,stdout,stderr)=>{
+		console.log(webpmux());
+		var query = '-info '+ file_name;
+		exec(webpmux(), query.split(/\s+/),(err,stdout,stderr)=>{
 			if(err)
 				reject(err);				
 			var data = stdout.split(/[\r\n]/);
@@ -59,5 +61,7 @@ module.exports = (file_name) => {
 			}
 			resolve(info);
 		});
+	}).catch((e)=>{
+		reject(e);
 	});
 }
