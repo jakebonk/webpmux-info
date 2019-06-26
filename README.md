@@ -29,6 +29,7 @@ An example of how the response data would look
   background_color: '0x00000000',
   loop_count: '0',
   frames: '25',
+  total_duration: 2250,
   pages:
    [ 
       {
