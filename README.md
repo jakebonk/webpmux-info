@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/webpmux-info.svg)](https://badge.fury.io/js/webpmux-info)
+
 # webpmux-info 
 This package uses webpmux and parses it into a javascript object.
 
