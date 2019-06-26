@@ -1,6 +1,6 @@
 {
   "name": "webpmux-info",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Get webp info using webpmux",
   "main": "index.js",
   "directories": {
@@ -13,12 +13,8 @@
     "type": "git",
     "url": "git+https://github.com/jakebonk/webpmux-info.git"
   },
-  "dependencies": {
-    
-  },
-  "devDependencies": {
-
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "keywords": [
     "webp",
     "webpmux",
