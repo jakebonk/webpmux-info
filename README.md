@@ -11,7 +11,7 @@ npm install webpmux-info
 
 ## Usage
 
-```
+```javascript
 const webpmux_info = require('webpmux-info');
 
 webpmux_info("./image.webp").then((animated_info)=>{
@@ -22,7 +22,7 @@ webpmux_info("./image.webp").then((animated_info)=>{
 ```
 An example of how the response data would look
 
-```
+```javascript
 { 
   canvas: { width: '365', height: '372' },
   features: 'animation',
