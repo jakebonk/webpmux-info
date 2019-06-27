@@ -3,7 +3,7 @@ const webpmux = require('./webpmux');
 
 module.exports = (file_name) => {
 	return new Promise(function(resolve,reject){
-		console.log(webpmux());
+		try{
 		var query = '-info '+ file_name;
 		exec(webpmux(), query.split(/\s+/),(err,stdout,stderr)=>{
 			if(err)
@@ -61,7 +61,10 @@ module.exports = (file_name) => {
 			}
 			resolve(info);
 		});
-	}).catch((e)=>{
+	}catch(e){
 		reject(e);
+	}
+	}).catch((e)=>{
+		console.log(e);
 	});
 }
