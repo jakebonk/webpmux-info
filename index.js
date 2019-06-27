@@ -1,7 +1,18 @@
 var exec = require('child_process').execFile;//get child_process module
 const webpmux = require('./webpmux');
+const webpinfo = require('./webpinfo');
 
-module.exports = (file_name) => {
+module.exports = {
+	webpinfo: function (file_name){
+		return new Promise(function(resolve,reject){
+			exec(webpinfo(), [file_name],(err,stdout,stderr)=>{
+				if(err)
+					reject(err);	
+				resolve(stdout);
+			});	
+		});
+	},
+	webpmux: function(file_name){
 	return new Promise(function(resolve,reject){
 		try{
 		var query = '-info '+ file_name;
@@ -67,4 +78,5 @@ module.exports = (file_name) => {
 	}).catch((e)=>{
 		console.log(e);
 	});
+}
 }
