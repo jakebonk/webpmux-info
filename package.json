@@ -1,6 +1,6 @@
 {
   "name": "webpmux-info",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Get webp info using webpmux",
   "main": "index.js",
   "directories": {
